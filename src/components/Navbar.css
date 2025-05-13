@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.navbar {
+  width: 100%;
+  background: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/* Left: Logo & Company Info */
+.navbar-left {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.navbar-logo {
+  height: 80px;
+  margin-right: 16px;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.2;
+}
+
+.line {
+  height: 2px;
+  background-color: #000;
+  border: none;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.iso-cert {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d10000;
+}
+
+/* Right: Contact Info + Nav */
+.navbar-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  flex-wrap: wrap;
+  color: #d10000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.icon {
+  color: #d10000;
+  font-size: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin-top: 4px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #d10000;
+}

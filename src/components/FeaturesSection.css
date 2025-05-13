@@ -1,0 +1,65 @@
+.features-section-v2 {
+    background-color: #E35336; /* ஆரஞ்சு கலர் பேக்ரவுண்ட் */
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-item-v2 {
+    text-align: center;
+    padding: 20px;
+    max-width: 200px;
+  }
+  
+  .feature-icon-v2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item-v2 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item-v2 p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .feature-image-container {
+    max-width: 300px;
+  }
+  
+  .feature-image-v2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* === Responsive Styling === */
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-item-v2 {
+      margin-bottom: 30px;
+      max-width: 90%;
+    }
+  
+    .feature-image-container {
+      margin-top: 30px;
+      max-width: 80%;
+    }
+  }

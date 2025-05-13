@@ -1,0 +1,132 @@
+.whyus-section {
+  background-color: #fff;
+  padding: 100px 20px;
+}
+
+.whyus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.whyus-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-width: 300px;
+}
+
+.image-stack {
+  position: relative;
+  width: 450px; /* Increased image width for more presence */
+  height: 300px; /* Increased image height */
+}
+
+.stack-image {
+  width: 100%;
+  border-radius: 15px; /* Slightly rounded edges for a smoother look */
+  position: absolute;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0.9; /* Slight opacity for a more elegant effect */
+}
+
+.stack-image.bottom {
+  top: 40px; /* Further distance between images */
+  left: 40px;
+  z-index: 1;
+}
+
+.stack-image.top {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.image-stack:hover .stack-image {
+  transform: scale(1.1); /* Stronger zoom effect */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+  opacity: 1; /* Full opacity on hover */
+}
+
+.whyus-right {
+  flex: 1;
+  min-width: 350px;
+}
+
+.text-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.whyus-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #d32f2f;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.highlight-text {
+  color: #d32f2f;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.points-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.points-list img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whyus-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .image-stack {
+    width: 360px;
+    height: 240px;
+  }
+
+  .text-box {
+    padding: 30px 20px;
+  }
+}

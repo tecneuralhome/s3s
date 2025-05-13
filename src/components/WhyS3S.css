@@ -1,0 +1,92 @@
+.why-s3s-section {
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .why-s3s-container {
+    display: flex; /* Enable Flexbox for the container */
+    flex-direction: row; /* Arrange items horizontally (image and text) */
+    align-items: center; /* Vertically align items in the center */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .why-s3s-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    max-width: 400px; /* Set a maximum width for the image */
+    margin-right: 30px; /* Add spacing between the image and text */
+  }
+  
+  .why-s3s-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-s3s-content {
+    flex-grow: 1; /* Allow the text content to take up remaining space */
+    text-align: left; /* Align the entire text content to the left */
+  }
+  
+  .why-s3s-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e35336;
+    margin-bottom: 20px;
+    text-align: left; /* Ensure the title is also left-aligned */
+  }
+  
+  .why-s3s-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left; /* Ensure the paragraph is left-aligned */
+  }
+  
+  .why-s3s-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Ensure the list is left-aligned */
+  }
+  
+  .why-s3s-content ul li {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .why-s3s-content ul li:before {
+    content: "•";
+    color: #e35336;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .why-s3s-container {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .why-s3s-image {
+      max-width: 80%;
+      margin: 0 auto 20px;
+    }
+  
+    .why-s3s-content {
+      text-align: left; /* Keep text left-aligned on smaller screens */
+    }
+  
+    .why-s3s-title {
+      text-align: center; /* Center the title on smaller screens */
+    }
+  }

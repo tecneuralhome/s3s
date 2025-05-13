@@ -1,0 +1,127 @@
+.hero-section {
+  position: relative;
+  color: white;
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content .highlight {
+  color: #E35336;
+  display: block;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.hero-button {
+  background-color: transparent;
+  color: #E35336;
+  padding: 14px 28px;
+  border: 2px solid #E35336;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #E35336;
+  color: white;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .overlay {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 0 15px;
+  }
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #E35336;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  z-index: 3; /* Above background, below text */
+}
+
